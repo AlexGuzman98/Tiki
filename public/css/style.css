@@ -335,20 +335,6 @@ template {
   bottom: 0px;
   position: absolute; }
 
-.menu_links {
-  margin: 20px 0 0 50px;
-  width: 202px; }
-  .menu_links a {
-    color: #000000;
-    display: grid;
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    text-decoration: none; }
-    .menu_links a:hover {
-      color: #44BBA4; }
-
 .header {
   display: inline-flex; }
 
@@ -365,7 +351,7 @@ template {
   text-align: center;
   width: 290px; }
   .login span {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 24px;
     font-weight: 800; }
   .login input {
@@ -409,7 +395,7 @@ template {
   text-align: center;
   width: 290px; }
   .signup span {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 24px;
     font-weight: 800; }
   .signup input {
@@ -461,3 +447,17 @@ template {
 .logo__global {
   margin-left: 120px;
   margin-top: 20px; }
+
+.menu_links {
+  margin: 20px 0 0 50px;
+  width: 202px; }
+  .menu_links a {
+    color: #000000;
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-decoration: none; }
+    .menu_links a:hover {
+      color: #44BBA4; }
