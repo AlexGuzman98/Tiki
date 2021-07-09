@@ -1,6 +1,3 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable no-alert */
-
 //
 // Tiki Music - Fabian Barquero & Alex Guzman
 //

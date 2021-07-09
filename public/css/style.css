@@ -303,6 +303,11 @@ template {
 [hidden] {
   display: none; }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -329,11 +334,6 @@ template {
 .wave__footer {
   bottom: 0px;
   position: absolute; }
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table; }
 
 .menu_links {
   margin: 60px 0 0 55px;
@@ -388,7 +388,8 @@ template {
     top: 80px;
     left: 100px;
     position: relative;
-    width: 50px; }
+    width: 50px;
+    z-index: 2; }
     .login button:hover {
       transform: scale(1.1);
       transition: 0.5s; }
@@ -431,7 +432,8 @@ template {
     left: 100px;
     position: relative;
     top: 60px;
-    width: 50px; }
+    width: 50px;
+    z-index: 2; }
     .signup button:hover {
       transform: scale(1.1);
       transition: 0.5s; }
@@ -440,3 +442,18 @@ template {
   position: relative;
   top: -100px;
   right: 70px; }
+
+.menu {
+  position: fixed;
+  width: 315px;
+  height: 1080px;
+  left: 0px;
+  top: 0px;
+  background-color: #D3D0CB; }
+
+.wave__global {
+  position: fixed;
+  width: 314.2px;
+  height: 371.11px;
+  left: 1px;
+  top: 650px; }

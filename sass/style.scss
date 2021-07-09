@@ -6,9 +6,10 @@
 @import 'library/normalize';
 
 // Partials
-@import 'partials/globals.scss';
+@import 'partials/globals';
 @import 'partials/login';
 @import 'partials/signin';
+@import 'partials/menuLinks';
 
 // Breakpoint
 @import 'breakpoint/all';
