@@ -361,7 +361,7 @@ template {
     border-right: none;
     border-bottom: 1px solid black;
     font-family: "Montserrat", sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     padding: 15px 0px;
     outline: 0px;
     width: 260px; }
@@ -405,7 +405,7 @@ template {
     border-right: none;
     border-top: none;
     font-family: "Montserrat", sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     outline: 0px;
     padding: 15px 0px;
     width: 260px; }
