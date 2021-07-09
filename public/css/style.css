@@ -335,6 +335,7 @@ template {
   bottom: 0px;
   position: absolute; }
 
+<<<<<<< HEAD
 .menu_links {
   margin: 60px 0 0 55px;
   width: 202px; }
@@ -354,6 +355,10 @@ template {
   position: fixed;
   width: 1600px;
   height: 120px; }
+=======
+.header {
+  display: inline-flex; }
+>>>>>>> f4a329b4d9c4920ee41d7c8f32d676785a3d868b
 
 .content__login--signin {
   float: right; }
@@ -368,7 +373,11 @@ template {
   text-align: center;
   width: 290px; }
   .login span {
+<<<<<<< HEAD
     font-family: "Montserrat", sans-serif;
+=======
+    font-family: "Nunito", sans-serif;
+>>>>>>> f4a329b4d9c4920ee41d7c8f32d676785a3d868b
     font-size: 24px;
     font-weight: 800; }
   .login input {
@@ -378,7 +387,11 @@ template {
     border-right: none;
     border-bottom: 1px solid black;
     font-family: "Montserrat", sans-serif;
+<<<<<<< HEAD
     font-weight: 800;
+=======
+    font-weight: 400;
+>>>>>>> f4a329b4d9c4920ee41d7c8f32d676785a3d868b
     padding: 15px 0px;
     outline: 0px;
     width: 260px; }
@@ -412,7 +425,11 @@ template {
   text-align: center;
   width: 290px; }
   .signup span {
+<<<<<<< HEAD
     font-family: "Montserrat", sans-serif;
+=======
+    font-family: "Nunito", sans-serif;
+>>>>>>> f4a329b4d9c4920ee41d7c8f32d676785a3d868b
     font-size: 24px;
     font-weight: 800; }
   .signup input {
@@ -422,7 +439,11 @@ template {
     border-right: none;
     border-top: none;
     font-family: "Montserrat", sans-serif;
+<<<<<<< HEAD
     font-weight: 800;
+=======
+    font-weight: 400;
+>>>>>>> f4a329b4d9c4920ee41d7c8f32d676785a3d868b
     outline: 0px;
     padding: 15px 0px;
     width: 260px; }
@@ -478,9 +499,12 @@ template {
     text-decoration: none; }
     .menu_links a:hover {
       color: #44BBA4; }
+<<<<<<< HEAD
 
 .header_global {
   background-color: #D3D0CB;
   position: fixed;
   width: 1600px;
   height: 120px; }
+=======
+>>>>>>> f4a329b4d9c4920ee41d7c8f32d676785a3d868b
