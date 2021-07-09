@@ -8,12 +8,14 @@
 }
 
 // Logo
+
 *{
 
   box-sizing: border-box ;
   margin: 0 ;
   padding: 0 ;
 }
+
 .header_logo {
 
   float: left ;
@@ -70,6 +72,6 @@
   }
 }
 
-.header {
+.header_global {
   display: inline-flex ;
 }
