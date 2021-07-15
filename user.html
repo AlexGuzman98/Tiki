@@ -15,26 +15,25 @@
   <title>User</title>
 </head>
 <body>
-  <div class="header">
-   
+  <div class="header_global">
     <div class="controller">
-      <button><img src="img/btn_back.png" alt=""></button>
-      <button><img src="img/btn_play.png" alt=""></button>
-      <button><img src="img/btn_next.png" alt=""></button>
+      <button class="back_button"><img  src="img/btn_back.png" alt="previous song"></button>
+      <button class="play_button"><img  src="img/btn_play.png" alt="play song"></button>
+      <button class="next_button"><img  src="img/btn_next.png" alt="next song"></button>
     </div>
     <div class="track">
       <!--The track info goes here-->
     </div>
-    <div class="volume">
-      <img src="img/volume_icon.png" alt="volume">
-    </div>
     <div class="user">
       <a href="./user.html"><img src="img/user_img_little.png" alt="user"></a>
     </div>
+    <div class="volume">
+      <img class="volume_icon"src="img/volume_icon.png" alt="volume">
+    </div>
   </div>
   <div class="menu__global">
-
-    <img src="img/tiki_logo_little.png" alt="Logo">
+    <img class="wave__global" src="img/onda_global.svg" alt="">
+    <a href="home.html"><img class="logo__global" src="img/tiki_logo_little.png" alt="Logo"></a>
     <div class="menu_links">
       <a href="./rplayed.html">Recently Played</a>
       <a href="./playlist.html">Playlist</a>
@@ -44,6 +43,11 @@
     <div class="playlist_list">
       <!--The playlist list goes here!-->
     </div>
+  </div>
+  <div class="home__content clearfix">
+    <ul>
+      <!--The API content goes here-->
+    </ul>
   </div>
 </body>
 </html>
