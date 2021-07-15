@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable no-alert */
 //
 // Tiki Music - Fabian Barquero & Alex Guzman
@@ -12,8 +13,6 @@ fetch(URL)
   .then((data) => {
     const infoContent = document.querySelector('.home__content ul');
     for (let i = 0; i < data.length; i += 1) {
-      console.log(data[i]);
-
       const listContent = document.createElement('li');
       infoContent.appendChild(listContent);
 
@@ -26,14 +25,13 @@ fetch(URL)
     }
   });
 
+const p1 = document.getElementById('p1').value;
+const p2 = document.getElementById('p2').value;
+const form = document.getElementById('form_signUp');
 
-  const p1 = document.getElementById('p1').value;
-  const p2 = document.getElementById('p2').value;
-  const form = document.getElementById('form_signUp');
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault;
-    if (p1 !== p2) {
-      alert("The password doesn't match");
-    }
-  });
+form.addEventListener('submit', (e) => {
+  e.preventDefault;
+  if (p1 !== p2) {
+    alert("The password doesn't match");
+  }
+});
