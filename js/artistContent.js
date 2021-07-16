@@ -1,4 +1,4 @@
-import { artistApi } from './index.js';
+import { artistApi } from './apiArtist.js';
 
 artistApi();
 class ArtistPrincipal {
