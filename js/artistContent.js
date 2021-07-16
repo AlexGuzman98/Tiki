@@ -13,8 +13,8 @@ class ArtistPrincipal {
       infoContent.appendChild(listContent);
 
       const dataArtist = `
-      <a href="" alt="${this.data[i].id} cover"><img src="${this.data[i].image}" alt="${this.data[i].id} cover"></a>
-      <h2>${this.data[i].name}</h2>
+      <a href=""><img src="${this.data[i].image}" alt="${this.data[i].id} cover">
+      <h2>${this.data[i].name}</h2></a>
   `;
       listContent.innerHTML = dataArtist;
     }
