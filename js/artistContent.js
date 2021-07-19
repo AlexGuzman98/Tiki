@@ -1,8 +1,7 @@
 /* eslint-disable import/extensions */
 // eslint-disable-next-line import/no-cycle
 import { artistApi } from './apiArtist.js';
-import { modalPlaylist } from './modal.js'
-modalPlaylist();
+
 artistApi();
 class ArtistPrincipal {
   constructor(data) {

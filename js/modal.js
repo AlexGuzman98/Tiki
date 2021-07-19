@@ -1,7 +1,6 @@
-const modal = document.getElementById('miModal');
-const flex = document.getElementById('flex');
-const abrir = document.getElementById('abrir');
-const cerrar = document.getElementById('close');
+import {
+  modal, flex, abrir, cerrar,
+} from './util.js';
 
 abrir.addEventListener('click', (e) => {
   e.preventDefault();
