@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import {
   modal, flex, abrir, cerrar,
 } from './util.js';
