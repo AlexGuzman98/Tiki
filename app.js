@@ -1,3 +1,12 @@
+/*
+Modules:
+npm i dotenv
+npm i mongoose
+npm i nodemon
+npm i express
+npm i express-validator
+*/
+
 require('dotenv').config();
 const express = require('express');
 const app = express();
