@@ -1,0 +1,29 @@
+.content_player{
+    position: absolute;
+    background-color: #DEDEDE;
+    width: 45%;
+    height: 85px;
+    left: 621px;
+    top: 18px;
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 25px;
+        margin-right: 10px;
+    }
+}
+.addPlaylist_button{
+    float: right;
+}
+.favorite_button{
+    float: right;
+}
+.cover_song{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background-color: #f7f1f1;
+    z-index: 1;
+}
