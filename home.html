@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,50 +16,58 @@
   <link rel="stylesheet" href="public/css/style.css">
   <title>Home</title>
 </head>
+
 <body>
   <div class="header_global">
     <div class="controller">
-      <button class="back_button"><img  src="img/btn_back.png" alt="previous song"></button>
-      <button class="play_button"><img  src="img/btn_play.png" alt="play song"></button>
-      <button class="next_button"><img  src="img/btn_next.png" alt="next song"></button>
+      <button class="back_button"><img src="img/btn_back.png" alt="previous song"></button>
+      <button class="play_button"><img src="img/btn_play.png" alt="play song"></button>
+      <button class="next_button"><img src="img/btn_next.png" alt="next song"></button>
     </div>
     <div class="content_player">
       <!--The track info goes here-->
       <div class="cover_song">
-       
+
 
       </div>
       <div class="fav_addPlay--content">
-        <button class="addPlaylist_button"><img  src="img/btn_add_playlist.png" alt="add song to playlist" id="abrir"></button>
-        <button class="favorite_button"><img  src="img/btn_favorite_unclick.png" alt="previous song"></button>
+        <button class="addPlaylist_button"><img src="img/btn_add_playlist.png" alt="add song to playlist"
+            id="abrir"></button>
+        <button class="favorite_button"><img src="img/btn_favorite_unclick.png" alt="previous song"></button>
       </div>
     </div>
     <div class="user">
-      <a href="./user.html"><img src="img/user_img_little.png" alt="user"></a>
+      <a href="#tab-6"><img src="img/user_img_little.png" alt="user"></a>
     </div>
     <div class="volume">
-      <img class="volume_icon"src="img/volume_icon.png" alt="volume">
+      <img class="volume_icon" src="img/volume_icon.png" alt="volume">
       <input type="range" min="0" max="100" value="100" onchange="volume_change()" id="volume">
     </div>
   </div>
   <div class="menu__global">
     <img class="wave__global" src="img/onda_global.svg" alt="">
-    <img class="logo__global" src="img/tiki_logo_little.png" alt="Logo">
+    <a href="#tab-1"><img class="logo__global" src="img/tiki_logo_little.png" alt="Logo"></a>
     <div class="menu_links">
-      <a href="./rplayed.html">Recently Played</a>
-      <a href="./playlist.html">Playlist</a>
-      <a href="./artist.html">Artist</a>
-      <a href="./favorite.html">Favorite Songs</a>
-      <a  href="#">Modal</a>
+      <a href="#tab-2">Recently Played</a>
+      <a href="#tab-3">Playlist</a>
+      <a href="#tab-4">Artist</a>
+      <a href="#tab-5">Favorite Songs</a>
       <div class="playlist_list">
         <!--The playlist list goes here!-->
       </div>
     </div>
   </div>
-  <div class="home__content clearfix">
-    <ul>
-      <!--The API content goes here-->
-    </ul>
+  <div class="tabs-content">
+    <div class="home__content clearfix">
+      <div id="tab-1" class="tabs-content-item">
+        <ul>
+          <!--The API content goes here-->
+        </ul>
+      </div>
+      <div id="tab-2" class="tabs-content-item">
+       <h1>HOla</h1>
+      </div>
+    </div>
   </div>
   <div id="miModal" class="modal">
     <div class="flex" id="flex">
@@ -82,8 +91,10 @@
       </div>
     </div>
   </div>
-
-  <script src="js/artistContent.js"  type="module"></script>
+  <script src="js/contentTabs.js"></script>
+  <script src="js/artistContent.js" type="module"></script>
   <script src="js/modal.js" type="module"></script>
+  
 </body>
+
 </html>
