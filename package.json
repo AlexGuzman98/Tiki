@@ -1,7 +1,7 @@
 {
-  "name": "js2-project-template",
+  "name": "tiki-music",
   "version": "2.0.0",
-  "description": "CETAV Javascript 2 Project Template",
+  "description": "CETAV Proyect IVC Tiki Music",
   "scripts": {
     "start": "node app.js",
     "start:dev": "nodemon app.js",

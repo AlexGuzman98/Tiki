@@ -27,6 +27,10 @@ const favoritesRoute = require('./routes/favorites.route');
 const playlistRoute = require('./routes/playlistRoute');
 const rPlayedRoute = require('./routes/rPlayed.route');
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> e2198ad2a356f1519b31db793cc5c53899fe6a1b
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
 db.on('error', error => console.log(error));

@@ -335,9 +335,12 @@ template {
   bottom: 0px;
   position: absolute; }
 
+<<<<<<< HEAD
 h1 {
   font-family: "Nunito", sans-serif; }
 
+=======
+>>>>>>> 85fb66e73e7e693bea43032c0d308f02b0ac5dbb
 .content__login--signin {
   float: right; }
 
