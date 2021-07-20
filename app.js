@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /*
 
 Modules for this proyect:
@@ -12,6 +13,7 @@ npm i express-validator
 // modules
 require('dotenv').config();
 const express = require('express');
+
 const app = express();
 const mongoose = require('mongoose');
 
@@ -22,7 +24,7 @@ const PORT = process.env.PORT || 3000;
 // Collections routes
 const userRoute = require('./routes/user.route');
 const favoritesRoute = require('./routes/favorites.route');
-
+const playlistRoute = require('./routes/playlistRoute');
 
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
@@ -31,19 +33,20 @@ db.once('open', ()=> console.log('**** Connection to db established ****'));
 
 app.use(express.json());
 app.use(express.urlencoded({
-    type:'application/x-www-form-urlencoded',
-    extended: true,
+  type: 'application/x-www-form-urlencoded',
+  extended: true,
 }));
 
 // Routers
 app.use('/', userRoute);
 app.use('/', favoritesRoute);
+app.use('./', playlistRoute);
 
 app.use('*', (req, res) => {
-    res.status(400);
-    res.send("Path no found");
+  res.status(400);
+  res.send("Path no found");
 });
 
 app.listen(PORT, HOSTNAME, () => {
-    console.log(`Server running on ${HOSTNAME}:${PORT}`);
+  console.log(`Server running on ${HOSTNAME}:${PORT}`);
 });
