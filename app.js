@@ -24,12 +24,8 @@ const PORT = process.env.PORT || 3000;
 // Collections routes
 const userRoute = require('./routes/user.route');
 const favoritesRoute = require('./routes/favorites.route');
-<<<<<<< HEAD
 const playlistRoute = require('./routes/playlistRoute');
-=======
 const rPlayedRoute = require('./routes/rPlayed.route');
-
->>>>>>> ee4b687a9da4280a34c416e546b794dadb03d842
 
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
@@ -45,11 +41,8 @@ app.use(express.urlencoded({
 // Routers
 app.use('/', userRoute);
 app.use('/', favoritesRoute);
-<<<<<<< HEAD
 app.use('./', playlistRoute);
-=======
 app.use('/', rPlayedRoute);
->>>>>>> ee4b687a9da4280a34c416e546b794dadb03d842
 
 app.use('*', (req, res) => {
   res.status(400);
