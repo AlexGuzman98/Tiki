@@ -1,29 +1,38 @@
-.content_player{
-    position: absolute;
-    background-color: #DEDEDE;
-    width: 45%;
-    height: 85px;
-    left: 621px;
-    top: 18px;
+.content_player {
+
+    background-color: #DEDEDE ;
+    border-radius: 15px ;
+    position: absolute ;
+    height: 85px ;
+    left: 621px ;
+    top: 18px ;
+    width: 45% ;
+
     button {
-        border: none;
-        background: none;
-        cursor: pointer;
-        margin-left: 10px;
-        margin-top: 25px;
-        margin-right: 10px;
+        border: none ;
+        background: none ;
+        cursor: pointer ;
+        margin-left: 10px ;
+        margin-top: 25px ;
+        margin-right: 10px ;
     }
 }
-.addPlaylist_button{
-    float: right;
+.addPlaylist_button {
+
+    float: right ;
+    margin-right: 37px ;
 }
-.favorite_button{
-    float: right;
+.favorite_button {
+
+    float: right ;
+    margin-right: 33px ;
 }
-.cover_song{
-    position: absolute;
-    width: 85px;
-    height: 85px;
-    background-color: #f7f1f1;
-    z-index: 1;
+.cover_song {
+
+    background-color: #f7f1f1 ;
+    border-radius: 15px ;
+    height: 85px ;
+    position: absolute ;
+    width: 85px ;
+    z-index: 1 ;
 }

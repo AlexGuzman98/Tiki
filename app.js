@@ -1,10 +1,28 @@
+/*
+
+Modules for this proyect:
+npm i dotenv
+npm i mongoose
+npm i nodemon
+npm i express
+npm i express-validator
+
+*/
+
+// modules
 require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+
+// .env
 const HOSTNAME = process.env.HOSTNAME || 'localhost';
 const PORT = process.env.PORT || 3000;
+
+// Collections routes
 const userRoute = require('./routes/user.route');
+const favoritesRoute = require('./routes/favorites.route');
+
 
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
@@ -19,6 +37,7 @@ app.use(express.urlencoded({
 
 // Routers
 app.use('/', userRoute);
+app.use('/', favoritesRoute);
 
 app.use('*', (req, res) => {
     res.status(400);
