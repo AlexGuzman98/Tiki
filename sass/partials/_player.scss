@@ -19,13 +19,15 @@
 }
 .addPlaylist_button {
 
-    float: right ;
-    margin-right: 37px ;
+    position: absolute;
+    left: 800px;
+    top: -1px;
 }
 .favorite_button {
 
-    float: right ;
-    margin-right: 33px ;
+    position: absolute;
+    left: 750px;
+    top: -1px;
 }
 .cover_song {
 
@@ -35,4 +37,37 @@
     position: absolute ;
     width: 85px ;
     z-index: 1 ;
+}
+.lineTimeSong{
+    position: absolute;
+    height: 7px;
+    top: 68px;
+    width: 570px;
+    left: 150px;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background-color: #fff;
+    outline: none;
+}
+.lineTimeSong::-webkit-slider-thumb{
+    transform: scale(1);
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: $turqueza;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    transition: 0.2s;   
+}
+.lineTimeSong:active::-webkit-slider-thumb{
+    transition: 0.2s;
+    transform: scale(1.5);
+}
+.song_time{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+    padding: 0 90px 5px ; 
+    font-family: $montserrat;
 }

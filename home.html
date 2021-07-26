@@ -8,12 +8,13 @@
   <meta name="description" content="TikiMusic" />
   <meta name="Keywords" content="Web Proyecto" />
   <meta name="author" content="Fabian Barquero y Alex Daniel Guzmán" />
-  <link rel="Tiki icon" type="image/jpg" href="img/favicon.ico"/>
+  <link rel="Tiki icon" type="image/jpg" href="img/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="public/css/style.css">
   <title>Home</title>
 </head>
@@ -24,15 +25,21 @@
 
   <div class="header_global">
     <div class="controller">
-      <button class="back_button"><img src="img/btn_back.png" alt="previous song"></button>
-      <button class="play_button"><img src="img/btn_play.png" alt="play song"></button>
-      <button class="next_button"><img src="img/btn_next.png" alt="next song"></button>
+      <button id="prevBtn" class="back_button"><i class="fa fa-step-backward"></i></button>
+      <button id="playBtn" class="play_button"><i class="fa fa-play"></i></button>
+      <button id="nextBtn" class="next_button"><i class="fa fa-step-forward"></i></button>
     </div>
     <div class="content_player">
       <!--The track info goes here-->
       <div class="cover_song">
         <!--The cover goes here-->
       </div>
+      <div class="song_time">
+        <span id="currentTime">00:00</span>
+        <span id="songTime">00:00</span>
+      </div>
+
+      <input id="lineTime"class="lineTimeSong" type="range" value="0" min="0" max="100" step="1">
       <div class="fav_addPlay--content">
         <button class="addPlaylist_button"><img src="img/btn_add_playlist.png" alt="add song to playlist"
             id="abrir"></button>
@@ -44,7 +51,7 @@
     </div>
     <div class="volume">
       <img class="volume_icon" src="img/volume_icon.png" alt="volume">
-      <input type="range" min="0" max="100" value="100" onchange="volume_change()" id="volume">
+      <input type="range" min="0" max="100" value="100"  id="volume">
     </div>
   </div>
   <div class="menu__global">
@@ -71,38 +78,40 @@
       <div id="tab-1" class="tabs-content-item">
         <ul>
           <!--The API content goes here-->
+         
+         
         </ul>
       </div>
       <div id="tab-2" class="tabs-content-item">
-       <h1>Contenido de Recently Played</h1>
-       <ul>
-        <!--The API content goes here-->
-      </ul>
+        <h1>Contenido de Recently Played</h1>
+       
+          <audio src="./21 Savage - Bank Account (Official Audio).mp3" id="audio" crossorigin="anonymous"></audio>
+        
       </div>
       <div id="tab-3" class="tabs-content-item">
         <h1>Contenido de Playlist</h1>
         <ul>
           <!--The API content goes here-->
         </ul>
-       </div>
-       <div id="tab-4" class="tabs-content-item">
+      </div>
+      <div id="tab-4" class="tabs-content-item">
         <h1>Contenido de Artistas</h1>
         <ul>
           <!--The  content goes here-->
         </ul>
-       </div>
-       <div id="tab-5" class="tabs-content-item">
+      </div>
+      <div id="tab-5" class="tabs-content-item">
         <h1>Contenido de Favoritos</h1>
         <ul>
           <!--The favorites songs content goes here-->
         </ul>
-       </div>
-       <div id="tab-6" class="tabs-content-item">
+      </div>
+      <div id="tab-6" class="tabs-content-item">
         <h1>Contenido de Usuario</h1>
         <ul>
           <!--The user content goes here-->
         </ul>
-       </div>
+      </div>
     </div>
   </div>
 
@@ -133,11 +142,11 @@
 
   <!--Script-->
 
-  <script src="js/artistContent.js"  type="module"></script>
+  <script src="js/artistContent.js" type="module"></script>
   <script src="js/player.js"></script>
   <script src="js/modal.js" type="module"></script>
   <script src="js/contentTabs.js"></script>
-  
+
 </body>
 
 </html>

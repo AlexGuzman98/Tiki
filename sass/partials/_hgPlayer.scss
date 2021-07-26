@@ -9,20 +9,25 @@
 .controller {
 
   position: absolute;
-  left: 350px;
-  top: 35px;
-  display: flex;
+  left: 320px;
+  top: 50px;
+  margin-left:10px ;
+  font-size: 25px;
 
-  button {
+
+  button  {
     border: none;
     background: none;
     cursor: pointer;
+    margin-left:50px ;
+    
 
     &:hover {
-      transform: scale(1.2);
-      transition: 0.2s;
+      transform: scale(1.5);
+      transition: 0.5s;
     }
   }
+
 }
 
 .user {
@@ -32,26 +37,7 @@
   margin-right: 70px;
 }
 
-.next_button {
 
-  position: absolute;
-  left: 150px;
-  top: 12px;
-}
-
-.play_button {
-
-  position: absolute;
-  left: 70px;
-  top: 0px;
-}
-
-.back_button {
-
-  position: absolute;
-  left: 20px;
-  top: 12px;
-}
 
 .volume {
 
