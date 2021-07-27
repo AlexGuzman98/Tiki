@@ -16,9 +16,9 @@ class SongsContent {
   artistSongs() {
     const infoContent = document.querySelector('#tab-4 ul');
     for (let i = 0; i < this.data.length; i += 1) {
-      const listContent = document.createElement('li');
-      infoContent.appendChild(listContent);
-      listContent.innerHTML = `
+      const songsList = document.createElement('li');
+      infoContent.appendChild(songsList);
+      songsList.innerHTML = `
       <div>
       <img src="${data[i].image}" alt="${data[i].name} cover">
         <h3>${data[i].name}</h3>
