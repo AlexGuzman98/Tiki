@@ -1,38 +1,52 @@
-//Tabs  
+//Tabs
 .tabs {
     margin-top: 50px ;
     margin-bottom: 50px;
     max-width: 1350px;
 }
-  
+
 .tabs-tablist {
-    border-radius: 10px ;
-    display: flex ;
-    margin-bottom: 10px ;
+  border-radius: 10px ;
+  display: flex ;
+  margin-bottom: 10px ;
 }
+
 .tabs-tablist-item {
-    display: block ;
+  display: block ;
 }
-  
-  
-  .tabs-content-item {
-   
-    a {
-      color: black ;
-      font-weight: bolder ;
-      text-decoration: none ;
-      font-family: $montserrat;
-    }
+
+.tabs-content-item {
+
+  a {
+    color: black ;
+    font-weight: bolder ;
+    text-decoration: none ;
+    font-family: $montserrat ;
   }
-  
- 
-  
-  .js-active {
-    transition: 0.5s ;
-    transform: scale(1.1) ;
-    color:$turqueza ;
+}
+
+.js-active {
+  transition: 0.5s ;
+  transform: scale(1.1) ;
+  color:$turqueza ;
+}
+
+.js-content-hidden {
+    display: none ;
+}
+
+#tab-6 {
+
+  img {
+    margin: 210px 0 40px 290px ;
   }
-  
-  .js-content-hidden {
-      display: none ;
-  }
+}
+
+#user_name {
+
+    font-family: $nunito ;
+    font-size: 48px ;
+    font-weight: bold ;
+    margin: 50px 0 0 270px ;
+    text-align: center ;
+}
