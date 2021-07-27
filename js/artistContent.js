@@ -8,7 +8,7 @@ class ArtistPrincipal {
     this.data = data;
   }
 
-  //Content artist home
+  // Content artist home
 
   artistContent() {
     const infoContent = document.querySelector('.home__content ul');
