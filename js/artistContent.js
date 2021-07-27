@@ -9,7 +9,7 @@ class ArtistPrincipal {
   }
 
   //Content artist home
-  
+
   artistContent() {
     const infoContent = document.querySelector('.home__content ul');
     for (let i = 0; i < this.data.length; i += 1) {

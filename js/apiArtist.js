@@ -1,10 +1,13 @@
+/* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable import/extensions */
-// eslint-disable-next-line import/no-cycle
-import ArtistPrincipal from './artistContent.js';
+/* eslint-disable-next-line import/no-cycle */
 
-const urlArtist = `https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/artists`;
-const urlSongs = `https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/gorillaz`;
+import ArtistPrincipal from './artistContent.js';
+import SongsContent from './songsArtist';
+
+const urlArtist = 'https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/artists';
+const urlSongs = 'https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/gorillaz';
 
 function artistApi() {
   fetch(urlArtist)
@@ -19,10 +22,9 @@ function songsAPI() {
   fetch(urlSongs)
     .then((response) => response.json())
     .then((data) => {
-      const songsData = new songsContent(data);
-      songsData.songsContent();
+      const songsData = new SongsContent(data);
+      songsData.SongsContent();
     });
 }
-
 
 export { artistApi, songsAPI };

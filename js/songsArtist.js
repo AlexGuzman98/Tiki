@@ -1,19 +1,22 @@
+/* eslint-disable no-undef */
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable import/extensions */
+// eslint-disable-next-line import/no-cycle
+
 import { songsAPI } from './apiArtist.js';
 
 songsAPI();
 
-class songsContent {
+class SongsContent {
   constructor(data) {
     this.data = data;
   }
 
-  // Songs content depends with the artist selected
-
   artistContent() {
-    const infoContent = document.querySelector('#tab-4 ul');
-      for (let i = 0; i < this.data.length; i += 1) {
+    const songsUl = document.querySelector('#tab-4 ul');
+    for (let i = 0; i < this.data.length; i += 1) {
       const listContent = document.createElement('li');
-      infoContent.appendChild(listContent);
+      songsUl.appendChild(listContent);
       listContent.innerHTML = `
       <div id=${data[i].id}>
       <img src="${data[i].image}" alt="${data[i].album} cover">
@@ -25,4 +28,4 @@ class songsContent {
   }
 }
 
-export default songsContent;
+export default SongsContent;
