@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
 
-import SongsContent from './songsArtist';
+import SongsContent from './songsArtist.js';
 
 const urlSongs = 'https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/gorillaz';
 
@@ -10,7 +10,7 @@ function songsAPI() {
     .then((response) => response.json())
     .then((data) => {
       const songsData = new SongsContent(data);
-      songsData.artistSongs();
+      songsData.artistSongsGorillaz();
     });
 }
 

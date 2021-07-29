@@ -4,30 +4,30 @@
 /* eslint-disable import/extensions */
 // eslint-disable-next-line import/no-cycle
 
-import { songsAPI } from './apiSongs';
+import { songsAPI } from './apiSongs.js';
 
 songsAPI();
 
-class SongsContent {
+class SongsContentGorillaz {
   constructor(data) {
     this.data = data;
   }
 
-  artistSongs() {
+  artistSongsGorillaz() {
     const infoContent = document.querySelector('#tab-4 ul');
     for (let i = 0; i < this.data.length; i += 1) {
       const songsList = document.createElement('li');
       infoContent.appendChild(songsList);
       songsList.innerHTML = `
-      <div>
-      <img src="${data[i].image}" alt="${data[i].name} cover">
-        <h3>${data[i].name}</h3>
-        <span>${data[i].album}</span>
-        <audio src="${data[i].audio}"></audio>
+      <div class="home_content">
+      <img src="${this.data[i].image}" alt="${this.data[i].name} cover">
+        <h2>${this.data[i].name}</h2>
+        <span class="album_name">${this.data[i].album}</span>
+        <audio src="${this.data[i].audio}"></audio>
       </div>
     `;
     }
   }
 }
 
-export default SongsContent;
+export default SongsContentGorillaz;

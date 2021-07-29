@@ -9,12 +9,12 @@ class ArtistPrincipal {
   }
 
   artistContent() {
-    const infoContent = document.querySelector('.home__content ul');
+    const infoContent = document.querySelector('#tab-1 ul');
     for (let i = 0; i < this.data.length; i += 1) {
       const listContent = document.createElement('li');
       infoContent.appendChild(listContent);
       listContent.innerHTML = `
-      <a href=""><img src="${this.data[i].image}" alt="${this.data[i].id} cover"></a>
+      <a href="#tab-4"><img src="${this.data[i].image}" alt="${this.data[i].id} cover"></a>
       <a href=""><h2>${this.data[i].name}</h2></a>
   `;
     }
