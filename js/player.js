@@ -1,31 +1,47 @@
+// Var
 const playBtn = document.getElementById('playBtn');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-const audio = document.getElementById('audio');
 const volumen = document.getElementById('volume');
 const progressSong = document.getElementById('lineTime');
 const title = document.getElementById('');
 const cover = document.getElementById('');
 
-// function songApi() {
-//   fetch('https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/radiohead')
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data);
-//       const artistData = new ArtistPrincipal(data);
-//       artistData.artistContent();
-//     });
-// }
-// songApi();\
+// Exports
+import { songsAPI } from './apiSongs.js';
+songsAPI();
 
+// Class
+class SongsPLayer {
+  constructor(data) {
+    this.data = data;
+  }
+
+  audioSongsPlayer() {
+    const audioContent = document.querySelector('.audio ul');
+    for (let i = 0; i < this.data.length; i += 1) {
+      const songsList = document.createElement('li');
+      audioContent.appendChild(songsList);
+      songsList.innerHTML = `
+      <div class="${data[i].name}_audio">
+          <audio>${data[i].audio}</audio>
+      </div>
+    `;
+    }
+  }
+}
+
+// Play
 function playSong() {
   audio.play();
 }
 
+// Pause
 function pauseSong() {
   audio.pause();
 }
 
+// Player event
 playBtn.addEventListener('click', () => {
   if (audio.paused) {
     playSong();
@@ -43,3 +59,6 @@ function setVolumen() {
   audio.volume = volumen.value / 100;
 }
 setVolumen();
+
+// Export Class
+export default SongsPLayer;

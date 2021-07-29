@@ -11,6 +11,10 @@ function songsAPI() {
     .then((data) => {
       const songsData = new SongsContent(data);
       songsData.artistSongsGorillaz();
+
+      // Player
+      const audioData = new SongsPLayer(data);
+      audioData.audioSongsPlayer();
     });
 }
 
