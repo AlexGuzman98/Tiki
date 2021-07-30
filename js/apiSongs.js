@@ -1,17 +1,34 @@
+/* eslint-disable import/extensions */
 /* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
+import SongsContentAurora from './songsArtistAurora.js';
+import SongsContentGorillaz from './songsArtistGorillaz.js';
+import SongsContentRadiohead from './songsArtistRadiohead.js';
 
-import SongsContent from './songsArtist.js';
-
-const urlSongs = 'https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/gorillaz';
-
-function songsAPI() {
-  fetch(urlSongs)
+function songsGorillaz() {
+  fetch('https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/gorillaz')
     .then((response) => response.json())
     .then((data) => {
-      const songsData = new SongsContent(data);
-      songsData.artistSongsGorillaz();
+      const songDataGorillaz = new SongsContentGorillaz(data);
+      songDataGorillaz.artistSongsGorillaz();
     });
 }
 
-export { songsAPI };
+function songsAurora() {
+  fetch('https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/aurora')
+    .then((response) => response.json())
+    .then((data) => {
+      const songDataAurora = new SongsContentAurora(data);
+      songDataAurora.artistSongsAurora();
+    });
+}
+function songsRadiohead() {
+  fetch('https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/radiohead')
+    .then((response) => response.json())
+    .then((data) => {
+      const songDataRadiohead = new SongsContentRadiohead(data);
+      songDataRadiohead.artistSongsRadiohead();
+    });
+}
+
+export { songsGorillaz, songsAurora, songsRadiohead };

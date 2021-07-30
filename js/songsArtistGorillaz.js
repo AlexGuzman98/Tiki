@@ -4,9 +4,9 @@
 /* eslint-disable import/extensions */
 // eslint-disable-next-line import/no-cycle
 
-import { songsAPI } from './apiSongs.js';
+import { songsGorillaz } from './apiSongs.js';
 
-songsAPI();
+songsGorillaz();
 
 class SongsContentGorillaz {
   constructor(data) {

@@ -7,17 +7,6 @@ const progressSong = document.getElementById('lineTime');
 const title = document.getElementById('');
 const cover = document.getElementById('');
 
-// function songApi() {
-//   fetch('https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/songs/radiohead')
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data);
-//       const artistData = new ArtistPrincipal(data);
-//       artistData.artistContent();
-//     });
-// }
-// songApi();\
-
 function playSong() {
   audio.play();
 }
