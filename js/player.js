@@ -1,20 +1,24 @@
+// Var
 const playBtn = document.getElementById('playBtn');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-const audio = document.getElementById('audio');
 const volumen = document.getElementById('volume');
+const audio = document.getElementById('audio');
 const progressSong = document.getElementById('lineTime');
 const title = document.getElementById('');
 const cover = document.getElementById('');
 
+// Play
 function playSong() {
   audio.play();
 }
 
+// Pause
 function pauseSong() {
   audio.pause();
 }
 
+// Player event
 playBtn.addEventListener('click', () => {
   if (audio.paused) {
     playSong();
