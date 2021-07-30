@@ -1,12 +1,12 @@
 // Var
 const playBtn = document.getElementById('playBtn');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+// const prevBtn = document.getElementById('prevBtn');
+// const nextBtn = document.getElementById('nextBtn');
 const volumen = document.getElementById('volume');
 const audio = document.getElementById('audio');
-const progressSong = document.getElementById('lineTime');
-const title = document.getElementById('');
-const cover = document.getElementById('');
+// const progressSong = document.getElementById('lineTime');
+// const title = document.getElementById('');
+// const cover = document.getElementById('');
 
 // Play
 function playSong() {
