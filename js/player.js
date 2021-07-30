@@ -1,3 +1,5 @@
+/* eslint-disable import/first */
+/* eslint-disable quotes */
 // Var
 const playBtn = document.getElementById('playBtn');
 // const prevBtn = document.getElementById('prevBtn');
@@ -7,6 +9,10 @@ const audio = document.getElementById('audio');
 // const progressSong = document.getElementById('lineTime');
 // const title = document.getElementById('');
 // const cover = document.getElementById('');
+
+import { songsRadiohead } from "./apiSongs";
+
+songsRadiohead();
 
 // Play
 function playSong() {
