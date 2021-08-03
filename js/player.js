@@ -1,3 +1,5 @@
+/* eslint-disable import/first */
+/* eslint-disable quotes */
 // Var
 const playBtn = document.getElementById('playBtn');
 // const prevBtn = document.getElementById('prevBtn');

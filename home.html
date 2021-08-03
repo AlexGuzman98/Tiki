@@ -21,8 +21,10 @@
 
 <body>
 
-  <!--Header-->
 <div class="wrapper clearfix">
+
+    <!--Header-->
+
   <div class="header_global">
     <div class="controller">
       <button id="prevBtn" class="back_button"><i class="fa fa-step-backward"></i></button>
@@ -54,20 +56,23 @@
       <input type="range" min="0" max="100" value="100"  id="volume">
     </div>
   </div>
+
+  <!--Vertical main-->
+
   <div class="menu__global">
     <img class="wave__global" src="img/onda_global.svg" alt="">
     <a href="#tab-1" class="tabs-tablist-item"><img class="logo__global" src="img/tiki_logo_little.png" alt="Logo"></a>
     <div class="menu_links">
       <a href="#tab-2" class="tabs-tablist-item">Recently Played</a>
       <a href="#tab-3" class="tabs-tablist-item">Playlist</a>
-      <a href="#tab-4" class="tabs-tablist-item">Artist</a>
+      <a href="#tab-4" class="tabs-tablist-item">Songs</a>
       <a href="#tab-5" class="tabs-tablist-item">Favorite Songs</a>
-      <a href="#tab-7" class="tabs-tablist-item">Canvas AnimationPlayer</a>
+      <a href="#tab-7" class="tabs-tablist-item">Artist info</a>
+      <a href="#tab-8" class="tabs-tablist-item">Canvas AnimationPlayer</a>
+    
       <hr class="line_playlist">
       <div class="playlist_list">
-
         <!--The playlist list goes here!-->
-
       </div>
     </div>
   </div>
@@ -81,6 +86,9 @@
           <!--The API content goes here-->
         </ul>
       </div>
+
+      <!--Recently Played-->
+
       <div id="tab-2" class="tabs-content-item">
         <h1>Contenido de Recently Played</h1>
 
@@ -88,37 +96,48 @@
             <!--The music goes here!! :D-->
           </ul>
           <audio src="./21 Savage - Bank Account (Official Audio).mp3" id="audio" crossorigin="anonymous"></audio>
-        
       </div>
+
+      <!--Playlist-->
+
       <div id="tab-3" class="tabs-content-item">
         <h1>Contenido de Playlist</h1>
         <ul>
           <!--The API content goes here-->
         </ul>
       </div>
+
+      <!--Songs-->
+
       <div id="tab-4" class="tabs-content-item">
         <h2 class="title_artist">Gorillaz</h2>
         <hr class="line_artist">
         <ul>
-          <!--The artist songs selected goes here-->
+          <!--The Gorillaz songs selected goes here-->
         </ul>
         <h2 class="title_artist">Aurora</h2>
         <hr class="line_artist">
         <ul class="list_aurora">
-           <!--The artist songs selected goes here-->
+          <!--The Aurora songs selected goes here-->
         </ul>
         <h2 class="title_artist">RadioHead</h2>
         <hr class="line_artist">
         <ul class="list_radiohead">
-           <!--The artist songs selected goes here-->
+          <!--The Radiohead songs selected goes here-->
         </ul>
       </div>
+
+      <!--Favorites songs-->
+
       <div id="tab-5" class="tabs-content-item">
         <h1>Contenido de Favoritos</h1>
         <ul>
           <!--The favorites songs content goes here-->
         </ul>
       </div>
+
+      <!--User info-->
+
       <div id="tab-6" class="tabs-content-item">
         <img src="img/user_img_big.png" alt="User img">
         <div id="user_name">
@@ -128,12 +147,19 @@
           <!--The user content goes here-->
         </ul>
       </div>
+
       <div id="tab-7" class="tabs-content-item">
+        <ul>
+          <!--The artist info goes here!-->
+        </ul>
+      </div>
+      <div id="tab-8" class="tabs-content-item">
         <canvas id="canvas" width='800px' height='85px'></canvas>
+
+      <!--Artist info-->
       </div>
     </div>
   </div>
-
   <!--Modal-->
 
   <div id="miModal" class="modal">
@@ -163,6 +189,7 @@
   <!--Script-->
 
   <script src="js/artistContent.js" type="module"></script>
+  <script src="js/apiArtistDesc.js"></script>
   <script src="js/songsArtistGorillaz.js" type="module"></script>
   <script src="js/songsArtistAurora.js" type="module"></script>
   <script src="js/songsArtistRadiohead.js" type="module"></script>
