@@ -676,20 +676,23 @@ h1 {
 .addPlaylist_button {
   position: absolute;
   left: 800px;
-  top: -1px; }
+  top: -1px;
+  z-index: 2; }
 
 .favorite_button {
   position: absolute;
   left: 750px;
-  top: -1px; }
+  top: -1px;
+  z-index: 2; }
 
 .cover_song {
   background-color: #f7f1f1;
-  border-radius: 15px;
   height: 85px;
   position: absolute;
   width: 85px;
-  z-index: 1; }
+  z-index: 2;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px; }
 
 .lineTimeSong {
   position: absolute;
@@ -700,7 +703,8 @@ h1 {
   -webkit-appearance: none;
   border-radius: 10px;
   background-color: #fff;
-  outline: none; }
+  outline: none;
+  z-index: 2; }
 
 .lineTimeSong::-webkit-slider-thumb {
   transform: scale(1);
@@ -718,15 +722,21 @@ h1 {
   transform: scale(1.5); }
 
 .song_time {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 63px;
   padding: 0 90px 5px;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  z-index: 2; }
 
 #canvas {
-  border-radius: 35px;
-  margin-left: 350px; }
+  position: absolute;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-left: 85px;
+  z-index: 0;
+  opacity: 0.350; }
 
 .tabs {
   margin-top: 50px;

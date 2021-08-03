@@ -20,7 +20,7 @@ class SongsContentAurora {
       infoContent.appendChild(songsList);
       songsList.innerHTML = `
       <div class="home_content">
-      <img src="${this.data[i].image}" alt="${this.data[i].name} cover">
+      <img src="${this.data[i].image}"  alt="${this.data[i].name} cover">
         <h2>${this.data[i].name}</h2>
         <span class="album_name">${this.data[i].album}</span>
         <audio src="${this.data[i].audio}"></audio>

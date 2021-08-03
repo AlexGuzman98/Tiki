@@ -44,7 +44,7 @@ function canvasPlayerAnimation() {
 
   function draw() {
     analyser.getByteFrequencyData(dataArray);
-    ctx.fillStyle = '#01061D';
+    ctx.fillStyle = '#DEDEDE';
     ctx.fillRect(0, 0, WIDTH, HEIGHT);
     const barWidth = (WIDTH / bufferLength) * 10;
     let barHeight;
@@ -62,15 +62,20 @@ function canvasPlayerAnimation() {
 }
 canvasPlayerAnimation();
 // Player event
-playBtn.addEventListener('click', () => {
-  if (audio.paused) {
-    playSong();
-    playBtn.firstChild.classList.remove('fa-play');
-    playBtn.firstChild.classList.add('fa-pause');
-  } else {
-    pauseSong();
-    playBtn.firstChild.classList.remove('fa-pause');
-    playBtn.firstChild.classList.add('fa-play');
-  }
-  canvasPlayerAnimation();
-});
+function playerBtnChange() {
+  playBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      playSong();
+      playBtn.firstChild.classList.remove('fa-play');
+      playBtn.firstChild.classList.add('fa-pause');
+    } else {
+      pauseSong();
+      playBtn.firstChild.classList.remove('fa-pause');
+      playBtn.firstChild.classList.add('fa-play');
+    }
+    canvasPlayerAnimation();
+  });
+}
+playerBtnChange();
+
+export { playSong, pauseSong };

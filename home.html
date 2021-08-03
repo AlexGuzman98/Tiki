@@ -32,6 +32,7 @@
       <button id="nextBtn" class="next_button"><i class="fa fa-step-forward"></i></button>
     </div>
     <div class="content_player">
+      <canvas id="canvas" width='780px' height='85px'></canvas>   
       <!--The track info goes here-->
       <div class="cover_song">
         <!--The cover goes here-->
@@ -68,7 +69,7 @@
       <a href="#tab-4" class="tabs-tablist-item">Songs</a>
       <a href="#tab-5" class="tabs-tablist-item">Favorite Songs</a>
       <a href="#tab-7" class="tabs-tablist-item">Artist info</a>
-      <a href="#tab-8" class="tabs-tablist-item">Canvas AnimationPlayer</a>
+     
     
       <hr class="line_playlist">
       <div class="playlist_list">
@@ -95,7 +96,7 @@
           <ul>
             <!--The music goes here!! :D-->
           </ul>
-          <audio src="./21 Savage - Bank Account (Official Audio).mp3" id="audio" crossorigin="anonymous"></audio>
+          <audio src="/21 Savage - Bank Account (Official Audio).mp3" id="audio" crossorigin="anonymous"></audio>
       </div>
 
       <!--Playlist-->
@@ -153,11 +154,6 @@
           <!--The artist info goes here!-->
         </ul>
       </div>
-      <div id="tab-8" class="tabs-content-item">
-        <canvas id="canvas" width='800px' height='85px'></canvas>
-
-      <!--Artist info-->
-      </div>
     </div>
   </div>
   <!--Modal-->
@@ -189,11 +185,11 @@
   <!--Script-->
 
   <script src="js/artistContent.js" type="module"></script>
-  <script src="js/apiArtistDesc.js"></script>
+  <script src="js/apiArtistDesc.js" type="module"></script>
   <script src="js/songsArtistGorillaz.js" type="module"></script>
   <script src="js/songsArtistAurora.js" type="module"></script>
   <script src="js/songsArtistRadiohead.js" type="module"></script>
-  <script src="js/player.js"></script>
+  <script src="js/player.js" type="module"></script>
   <script src="js/modal.js" type="module"></script>
   <script src="js/contentTabs.js"></script>
 </body>
