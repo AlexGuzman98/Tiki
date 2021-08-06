@@ -78,4 +78,4 @@ function playerBtnChange() {
 }
 playerBtnChange();
 
-export { playSong, pauseSong };
+export { playSong, pauseSong, playerBtnChange };
