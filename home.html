@@ -23,7 +23,7 @@
 
 <div class="wrapper clearfix">
 
-    <!--Header-->
+  <!--Header-->
 
   <div class="header_global">
     <div class="controller">
@@ -32,20 +32,14 @@
       <button id="nextBtn" class="next_button"><i class="fa fa-step-forward"></i></button>
     </div>
     <div class="content_player">
-      <canvas id="canvas" width='780px' height='85px'></canvas>   
+      <canvas id="canvas" width='780px' height='85px'></canvas>
       <!--The track info goes here-->
       <div class="cover_song">
         <!--The cover goes here-->
       </div>
-      <div class="song_time">
-        <span id="currentTime">00:00</span>
-        <span id="songTime">00:00</span>
-      </div>
-
-      <input id="lineTime"class="lineTimeSong" type="range" value="0" min="0" max="100" step="1">
+      <input id="lineTime" class="lineTimeSong" type="range" value="0" min="0" max="100" step="1">
       <div class="fav_addPlay--content">
-        <button class="addPlaylist_button"><img src="img/btn_add_playlist.png" alt="add song to playlist"
-            id="abrir"></button>
+        <button class="addPlaylist_button"><img src="img/btn_add_playlist.png" alt="add song to playlist" id="abrir"></button>
         <button class="favorite_button"><img src="img/btn_favorite_unclick.png" alt="previous song"></button>
       </div>
     </div>
@@ -69,8 +63,6 @@
       <a href="#tab-4" class="tabs-tablist-item">Songs</a>
       <a href="#tab-5" class="tabs-tablist-item">Favorite Songs</a>
       <a href="#tab-7" class="tabs-tablist-item">Artist info</a>
-     
-    
       <hr class="line_playlist">
       <div class="playlist_list">
         <!--The playlist list goes here!-->
@@ -192,6 +184,7 @@
   <script src="js/player.js" type="module"></script>
   <script src="js/modal.js" type="module"></script>
   <script src="js/contentTabs.js"></script>
+  <script src="js/playlist.js"></script>
 </body>
 
 </html>
