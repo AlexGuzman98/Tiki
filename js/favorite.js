@@ -9,6 +9,7 @@ function favorite() {
         fetch(`https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/song/${element}`)
           .then((response) => response.json())
           .then((data) => {
+            // console.log(data);
             const favoriteTab = document.querySelector('#tab-5 ul');
             const favoriteContent = document.createElement('li');
             favoriteTab.appendChild(favoriteContent);
