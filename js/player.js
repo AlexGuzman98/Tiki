@@ -6,15 +6,10 @@ const playBtn = document.getElementById('playBtn');
 // const nextBtn = document.getElementById('nextBtn');
 const volumen = document.getElementById('volume');
 const audio = document.getElementById('audio');
-// const progressSong = document.getElementById('lineTime');
-// const title = document.getElementById('');
-// const cover = document.getElementById('');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
-let f = false;
-const favorite = document.getElementsByClassName('favorite_button_img');
 // Play
 function playSong() {
   audio.play();
@@ -30,20 +25,6 @@ function setVolumen() {
   audio.volume = volumen.value / 100;
 }
 setVolumen();
-
-// Load Track
-/*
-class Player {
-  constructor(data) {
-    this.data = data;
-  }
-
-  loadTrack() {
-    for (let i = 0; i < this.data.length; i += 1) {
-
-    }
-  }
-} */
 
 // Animation canvas
 function canvasPlayerAnimation() {
@@ -94,20 +75,5 @@ function playerBtnChange() {
   });
 }
 playerBtnChange();
-
-// Add favorites songs
-
-favorite.addEventListener('clicked', add(), false);
-
-function add() {
-  if (f === false) {
-    favorite.className('favorite_button_clicked');
-    f = true;
-    console.log('cancion clikeada');
-  } else {
-    favorite.className('favorite_button');
-    f = false;
-  }
-}
 
 export { playSong, pauseSong, playerBtnChange };

@@ -28,9 +28,11 @@ class SongsContentAurora {
         <audio src="${this.data[i].audio}"></audio>
       </div>
     `;
-      cover.src = this.data[1].image;
-      audio.src = this.data[1].audio;
+      cover.src = this.data[i].image;
+      audio.src = this.data[i].audio;
       audio.load();
+      document.getElementById('title_player').innerHTML = `${this.data[i].name}`;
+      document.getElementById('album_player').innerHTML = `${this.data[i].album}`;
     }
   }
 }

@@ -1,5 +1,6 @@
 /* eslint-disable no-shadow */
 const formCreate = document.getElementById('create');
+const login = document.getElementById('login');
 const userName = document.querySelectorAll('input')[2];
 const email = document.querySelectorAll('input')[3];
 const password = document.querySelectorAll('input')[4];
@@ -41,6 +42,35 @@ function formChecker(email, password, password2, name) {
       }
     });
 }
+
+async function loginUser(user) {
+  const link = await fetch('https://tiki-music.herokuapp.com/user/login', {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    method: 'POST',
+    body: JSON.stringify(user),
+  })
+
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    });
+  return link;
+}
+login.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailUser = formCreate.elements[1].value;
+  const passwords = formCreate.elements[2].value;
+  const user = {
+    email: emailUser,
+    password: passwords,
+  };
+  const data = loginUser(user);
+  window.location.href = 'home.html';
+
+  console.log(data);
+});
 
 formCreate.addEventListener('submit', (e) => {
   e.preventDefault();
