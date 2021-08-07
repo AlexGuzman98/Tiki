@@ -26,6 +26,8 @@ class SongsContentRadioHead {
         <audio src="${this.data[i].audio}"></audio>
       </div>
     `;
+      audio.src = this.data[i].audio;
+      audio.load();
     }
   }
 }

@@ -31,6 +31,21 @@ function setVolumen() {
 }
 setVolumen();
 
+// Load Track
+/*
+class Player {
+  constructor(data) {
+    this.data = data;
+  }
+
+  loadTrack() {
+    for (let i = 0; i < this.data.length; i += 1) {
+
+    }
+  }
+}*/
+
+// Animation canvas
 function canvasPlayerAnimation() {
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   const analyser = audioCtx.createAnalyser();
@@ -61,7 +76,8 @@ function canvasPlayerAnimation() {
   }
   draw();
 }
-canvasPlayerAnimation();
+// canvasPlayerAnimation();
+
 // Player event
 function playerBtnChange() {
   playBtn.addEventListener('click', () => {
