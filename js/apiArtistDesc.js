@@ -15,17 +15,12 @@ class ArtistDescription {
       const listContent = document.createElement('li');
       infoContent.appendChild(listContent);
       listContent.innerHTML = `
-      <div class="artist_left-content">
+     
         <img src="${this.data[i].image}" alt="${this.data[i].name} cover">
         <h2>${this.data[i].name}</h2>
-        <p>${this.data[i].description}</p>
-      </div>
-      <div class="artist_right-content">
-        <h2>${this.data[i].name} Songs</h2>
-        <div class="artist_right-content-songs">
-          <!--The artist songs goes here! :)-->
-        </div>
-      </div>
+        <p class="description_artist">${this.data[i].description}</p>
+        <a href="#tab-7-ul">Click here to watch  ${this.data[i].name} Songs</a>
+    
   `;
     }
   }
