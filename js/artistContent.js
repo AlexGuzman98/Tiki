@@ -14,8 +14,8 @@ class ArtistPrincipal {
       const listContent = document.createElement('li');
       infoContent.appendChild(listContent);
       listContent.innerHTML = `
-      <a href="tab7" class="tabs-tablist-item"><img src="${this.data[i].image}" alt="${this.data[i].id} cover"></a>
-      <a href=""><h2>${this.data[i].name}</h2></a>
+      <a href="#" class="tabs-tablist-item"><img src="${this.data[i].image}" alt="${this.data[i].id} cover"></a>
+      <a href="#"><h2>${this.data[i].name}</h2></a>
   `;
     }
   }
