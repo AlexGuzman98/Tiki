@@ -41,6 +41,26 @@
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
+
+#cover-player {
+
+  height: 85px ;
+  position: absolute ;
+  width: 85px ;
+  z-index: 2 ;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.song_info {
+
+  font-family: $nunito ;
+  position: absolute ;
+  top: 10px ;
+  left: 450px ;
+  text-align: center ;
+}
+
 .lineTimeSong{
     position: absolute;
     height: 7px;

@@ -33,9 +33,13 @@
     </div>
     <div class="content_player">
       <canvas id="canvas" width='780px' height='85px'></canvas>
-      <!--The track info goes here-->
+      <div class="song_info" id="song_info">
+        <!--The track info goes here-->
+        <h2 id="title_player"></h2>
+        <p id="album_player"></p>
+      </div>
       <div class="cover_song">
-        <!--The cover goes here-->
+        <img id="cover-player" src="" alt="">
       </div>
       <input id="lineTime" class="lineTimeSong" type="range" value="0" min="0" max="100" step="1">
       <div class="fav_addPlay--content">
@@ -132,13 +136,10 @@
 
       <div id="tab-6" class="tabs-content-item">
         <img id="img-user" src="img/user_img_big.png" alt="User img">
-
         <div id="user_name">
           <!--User name-->
-          <h2>Welcome {name}</h2>
-          <h2>Are you listened to {artist song}</h2>
+          <h2 id="user_name"></h2>
         </div>
-
       </div>
 
       <div id="tab-7" class="tabs-content-item">
@@ -186,6 +187,7 @@
   <script src="js/contentTabs.js"></script>
   <script src="js/favorite.js"></script>
   <script src="js/recentlyPlayed.js"></script>
+  <script src="js/user.js"></script>
 </body>
 
 </html>

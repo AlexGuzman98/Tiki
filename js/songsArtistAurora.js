@@ -15,6 +15,8 @@ class SongsContentAurora {
 
   artistSongsAurora() {
     const infoContent = document.querySelector('.list_aurora');
+    const audio = document.getElementById('audio');
+    const cover = document.getElementById('cover-player');
     for (let i = 0; i < this.data.length; i += 1) {
       const songsList = document.createElement('li');
       infoContent.appendChild(songsList);
@@ -26,6 +28,9 @@ class SongsContentAurora {
         <audio src="${this.data[i].audio}"></audio>
       </div>
     `;
+      cover.src = this.data[1].image;
+      audio.src = this.data[1].audio;
+      audio.load();
     }
   }
 }

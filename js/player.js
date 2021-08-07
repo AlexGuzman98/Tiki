@@ -43,7 +43,7 @@ class Player {
 
     }
   }
-}*/
+} */
 
 // Animation canvas
 function canvasPlayerAnimation() {
