@@ -1,5 +1,5 @@
 /* eslint-disable arrow-parens */
-const url = 'https://tiki-music.herokuapp.com/favorite/6100bbcdec3538f60593b5b2';
+const url = 'https://tiki-music.herokuapp.com/recently-played/610dce509df4c800049a8e3b';
 // ${id}
 
 function playlist() {
@@ -13,17 +13,17 @@ function playlist() {
         fetch(`https://kt2ul4cwza.execute-api.us-east-2.amazonaws.com/public/song/${element}`)
           .then((response) => response.json())
           .then((data) => {
-            // console.log(data);
-            const favoriteTab = document.querySelector('#tab-5 ul');
+            console.log(data);
+            const recentlyPlayedTab = document.querySelector('#tab-2 ul');
             for (let i = 0; i < data.length; i += 1) {
-              const favoriteContent = document.createElement('li');
-              favoriteTab.appendChild(favoriteContent);
-              favoriteContent.innerHTML = `
+              const recentlyPlayedContent = document.createElement('li');
+              recentlyPlayedTab.appendChild(recentlyPlayedContent);
+              recentlyPlayedContent.innerHTML = `
 
               <div>
               <h1>Hola</h1>
               </div>
-              
+
           `;
             }
           });
