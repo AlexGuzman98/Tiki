@@ -13,7 +13,8 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
-
+let f = false;
+const favorite = document.getElementsByClassName('favorite_button_img');
 // Play
 function playSong() {
   audio.play();
@@ -77,5 +78,20 @@ function playerBtnChange() {
   });
 }
 playerBtnChange();
+
+// Add favorites songs
+
+favorite.addEventListener('clicked', add, false);
+
+function add() {
+  if (f === false) {
+    favorite.className('favorite_button_clicked');
+    f = true;
+    console.log('cancion clikeada');
+  } else {
+    favorite.className('favorite_button');
+    f = false;
+  }
+}
 
 export { playSong, pauseSong, playerBtnChange };

@@ -62,20 +62,20 @@
     cursor: pointer;
     outline: none;
     border-radius: 50%;
-    transition: 0.2s;   
-  
+    transition: 0.2s;
+
 }
 .lineTimeSong:active::-webkit-slider-thumb{
     transition: 0.2s;
     transform: scale(1.5);
-    
+
 }
 .song_time{
     position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 63px;
-    padding: 0 90px 5px ; 
+    padding: 0 90px 5px ;
     font-family: $montserrat;
     z-index: 2;
 }
@@ -86,4 +86,8 @@
     margin-left: 85px;
     z-index: 0;
     opacity: 0.350;
+}
+
+.favorite_button_clicked {
+  display: none ;
 }
