@@ -23,7 +23,7 @@ class SongsContentAurora {
       <img src="${this.data[i].image}"  alt="${this.data[i].name} cover">
         <h2>${this.data[i].name}</h2>
         <span class="album_name">${this.data[i].album}</span>
-        <audio src="${this.data[i].audio}" id=audio></audio>
+        <audio src="${this.data[i].audio}"></audio>
       </div>
     `;
     }
