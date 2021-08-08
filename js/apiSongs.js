@@ -20,6 +20,8 @@ function songsAurora() {
     .then((data) => {
       const songDataAurora = new SongsContentAurora(data);
       songDataAurora.artistSongsAurora();
+      songDataAurora.nextSong();
+      songDataAurora.prevSong();
     });
 }
 

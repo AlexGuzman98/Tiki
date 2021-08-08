@@ -8,6 +8,8 @@ import { songsAurora } from './apiSongs.js';
 
 songsAurora();
 
+let counter = 0;
+
 class SongsContentAurora {
   constructor(data) {
     this.data = data;
@@ -23,10 +25,46 @@ class SongsContentAurora {
       <img src="${this.data[i].image}"  alt="${this.data[i].name} cover">
         <h2>${this.data[i].name}</h2>
         <span class="album_name">${this.data[i].album}</span>
-        <audio src="${this.data[i].audio}"></audio>
+        <audio src="${this.data[i].audio}" crossorigin="anonymous"></audio>
       </div>
     `;
     }
+  }
+
+  nextSong() {
+    const next = document.getElementById('nextBtn');
+    next.addEventListener('click', () => {
+      if (this.counter == 0) {
+        this.counter = 1;
+      }
+      const recentCount = this.counter++;
+      if (this.recentCount < this.data.length) {
+        audio.src = this.data[recentCount].audio;
+        audio.play();
+      } else {
+        counter = 0;
+        audio.src = this.data[counter].audio;
+        audio.play();
+      }
+    });
+  }
+
+  prevSong() {
+    const prev = document.getElementById('prevBtn');
+    prev.addEventListener('click', () => {
+      if (this.counter == 0) {
+        this.counter = this.data.length;
+      }
+      const recentCount = this.counter--;
+      if (this.recentCount < this.data.length) {
+        audio.src = this.data[recentCount].audio;
+        audio.play();
+      } else {
+        counter = 0;
+        audio.src = this.data[counter].audio;
+        audio.play();
+      }
+    });
   }
 }
 

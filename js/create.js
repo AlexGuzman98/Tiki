@@ -25,10 +25,10 @@ function formChecker(email, password, password2, name) {
     .then((data) => {
       for (let i = 0; i <= data.data.length; i += 1) {
         if (email.value === data.data[i].email) {
-          console.log('the Email is already in use');
+          alert('the Email is already in use');
           break;
         } else if (password !== password2) {
-          console.log("the password doesn't match");
+          alert("the password doesn't match");
           break;
         } else if (email !== data.data[i].email && password === password2) {
           const userInfo = {
