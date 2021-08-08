@@ -19,7 +19,7 @@ class ArtistDescription {
         <img src="${this.data[i].image}" alt="${this.data[i].name} cover">
         <h2>${this.data[i].name}</h2>
         <p class="description_artist">${this.data[i].description}</p>
-        <a href="#tab-7-ul">Click here to watch  ${this.data[i].name} Songs</a>
+        <a href="#tab-4" id="tab-4" class="">Click here to watch  ${this.data[i].name} Songs</a>
   `;
     }
   }
