@@ -25,7 +25,7 @@ function setVolumen() {
   audio.volume = volumen.value / 100;
 }
 setVolumen();
-
+const audioCtxERROR = new (window.AudioContext || window.webkitAudioContext)();
 // Animation canvas
 function canvasPlayerAnimation() {
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -62,6 +62,9 @@ function canvasPlayerAnimation() {
 // Player event
 function playerBtnChange() {
   playBtn.addEventListener('click', () => {
+    if (audioCtxERROR.state === 'suspended') {
+      audioCtxERROR.audioContenxt.resumed();
+    }
     if (audio.paused) {
       playSong();
       playBtn.firstChild.classList.remove('fa-play');
@@ -72,7 +75,7 @@ function playerBtnChange() {
       playBtn.firstChild.classList.add('fa-play');
     }
     canvasPlayerAnimation();
-  });
+  }, false);
 }
 playerBtnChange();
 
