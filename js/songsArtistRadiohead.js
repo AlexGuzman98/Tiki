@@ -15,8 +15,6 @@ class SongsContentRadioHead {
 
   artistSongsRadiohead() {
     const infoContent = document.querySelector('.list_radiohead');
-    const audio = document.getElementById('audio');
-    const cover = document.getElementById('cover-player');
     for (let i = 0; i < this.data.length; i += 1) {
       const songsList = document.createElement('li');
       infoContent.appendChild(songsList);
@@ -28,10 +26,6 @@ class SongsContentRadioHead {
         <audio src="${this.data[i].audio}"></audio>
       </div>
     `;
-      cover.src = this.data[4].image;
-      audio.src = this.data[4].audio;
-      document.getElementById('title_player').innerHTML = `${this.data[4].name}`;
-      document.getElementById('album_player').innerHTML = `${this.data[4].album}`;
     }
   }
 }
