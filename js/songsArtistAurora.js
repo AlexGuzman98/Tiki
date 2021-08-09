@@ -68,10 +68,12 @@ class SongsContentAurora {
         audio.src = this.data[recentCount].audio;
         audio.play();
       } else {
-        counter = 0;
+        counter = 5;
         audio.src = this.data[counter].audio;
         audio.play();
       }
+      document.getElementById('title_player').innerHTML = `${this.data[5].name}`;
+      document.getElementById('album_player').innerHTML = `${this.data[5].album}`;
     });
   }
 }
